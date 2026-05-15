@@ -83,7 +83,219 @@ Remplace entièrement le contenu de ton fichier `index.html` par ce code 👇
 
     /* HERO */
 
-    header
+    header {
+      height: 100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+      url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: #d4af37;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(212,175,55,0.5);
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: #d4af37;
+      color: black;
+      padding: 15px 40px;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: white;
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 90px 8%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      color: #cfcfcf;
+      line-height: 1.8;
+      margin-bottom: 50px;
+      font-size: 1.1rem;
+    }
+
+    /* GALERIE */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 2px solid #d4af37;
+      transition: 0.4s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: black;
+      color: #999;
+    }
+
+    .instagram {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media(max-width: 768px) {
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .gallery img {
+        height: 350px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+
+  <div class="menu">
+
+    <details>
+
+      <summary>☰</summary>
+
+      <div class="menu-content">
+
+        <input class="search" type="text" placeholder="Rechercher un vêtement...">
+
+        <a href="#magasin">🏬 Le magasin</a>
+        <a href="#collection">👕 Collection</a>
+        <a href="#contact">📱 Contact</a>
+
+      </div>
+
+    </details>
+
+  </div>
+
+  <!-- HERO -->
+
+  <header>
+
+    <h1>POP‑REPUBLIC</h1>
+
+    <p class="subtitle">
+      Plus qu’un magasin, un univers streetwear.
+      <br><br>
+      Découvrez les dernières tendances mode,
+      sneakers et vêtements premium à
+      Saint‑Étienne‑de‑Saint‑Geoirs.
+      <br><br>
+      Élégance • Street • Luxe urbain ✨
+    </p>
+
+    <a href="#magasin" class="btn">
+      Découvrir le magasin
+    </a>
+
+  </header>
+
+  <!-- SECTION -->
+
+  <section id="magasin">
+
+    <h2>🔥 Notre univers</h2>
+
+    <p class="intro">
+      Pop‑Republic mélange mode urbaine,
+      pièces tendance et ambiance premium.
+      Un espace pensé pour les passionnés de style,
+      sneakers et street culture.
+    </p>
+
+    <div class="gallery">
+
+      <!-- Remplace ces images par les vraies photos du magasin -->
+
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <footer id="contact">
+
+    <p>
+      Instagram :
+      <a class="instagram" href="https://instagram.com/poprepublic" target="_blank">
+        @poprepublic
+      </a>
+    </p>
+
+  </footer>
+
+</body>
+</html>
+```
 
 # Ensuite 🚀
 
@@ -96,10 +308,8 @@ Remplace entièrement le contenu de ton fichier `index.html` par ce code 👇
 
 Tu auras maintenant un vrai site streetwear moderne avec :
 
-✅ menu hamburger ☰  
-✅ grandes photos premium  
-✅ design noir élégant  
-✅ animations modernes  
+✅ menu hamburger ☰
+✅ grandes photos premium
+✅ design noir élégant
+✅ animations modernes
 ✅ look type Supreme / Nike / Corteiz 🔥
-
-```
