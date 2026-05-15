@@ -101,4 +101,144 @@ Remplace entièrement le contenu de ton fichier `index.html` par ce code 👇
 
     h2 {
       font-size: 3rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      transition: 0.4s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: black;
+      color: #888;
+    }
+
+    .instagram {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .instagram:hover {
+      color: #ff4d00;
+    }
+
+    /* MOBILE */
+
+    @media(max-width: 768px) {
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .gallery img {
+        height: 350px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+
+  <div class="menu">
+    ☰
+  </div>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <h1>POP‑REPUBLIC</h1>
+
+    <p class="subtitle">
+      Streetwear • Sneakers • Style urbain
+    </p>
+
+    <a href="#magasin" class="btn">
+      Voir le magasin
+    </a>
+
+  </header>
+
+  <!-- GALERIE -->
+
+  <section id="magasin">
+
+    <h2>🔥 Le magasin</h2>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop" alt="Magasin streetwear">
+
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop" alt="Boutique vêtements">
+
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" alt="Fashion store">
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      Instagram :
+
+      <a class="instagram" href="https://instagram.com/poprepublic" target="_blank">
+        @poprepublic
+      </a>
+
+    </p>
+
+  </footer>
+
+</body>
+</html>
 ```
+
+# Ensuite 🚀
+
+1. Ouvre `index.html`
+2. Clique sur ✏️ Edit
+3. Supprime tout
+4. Colle ce nouveau code
+5. Clique sur `Commit changes`
+6. Recharge ton site GitHub Pages
+
+Tu auras maintenant un vrai site streetwear moderne avec :
+
+✅ menu hamburger ☰
+✅ grandes photos premium
+✅ design noir élégant
+✅ animations modernes
+✅ look type Supreme / Nike / Corteiz 🔥
