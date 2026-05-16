@@ -1,315 +1,316 @@
-# Pop‑Republic — Version Luxe Noir & Or ✨🔥
-
-Remplace entièrement le contenu de ton fichier `index.html` par ce code 👇
-
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pop‑Republic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<title>Pop-Republic</title>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #050505;
-      color: white;
-      overflow-x: hidden;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    /* MENU */
+body{
+font-family:Arial,sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
 
-    .menu {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-    }
+/* MENU */
 
-    .menu details {
-      background: rgba(0,0,0,0.8);
-      border: 1px solid #d4af37;
-      border-radius: 15px;
-      padding: 10px 15px;
-      width: 220px;
-      backdrop-filter: blur(10px);
-    }
+.menu{
+position:fixed;
+top:20px;
+left:20px;
+z-index:1000;
+}
 
-    .menu summary {
-      list-style: none;
-      cursor: pointer;
-      font-size: 2rem;
-      color: #d4af37;
-    }
+.menu details{
+background:rgba(0,0,0,0.85);
+border:1px solid #d4af37;
+border-radius:15px;
+padding:12px 18px;
+width:230px;
+backdrop-filter:blur(10px);
+}
 
-    .menu summary::-webkit-details-marker {
-      display: none;
-    }
+.menu summary{
+list-style:none;
+cursor:pointer;
+font-size:2rem;
+color:#d4af37;
+}
 
-    .menu-content {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+.menu summary::-webkit-details-marker{
+display:none;
+}
 
-    .menu-content a {
-      text-decoration: none;
-      color: white;
-      font-size: 1rem;
-      transition: 0.3s;
-    }
+.menu-content{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
 
-    .menu-content a:hover {
-      color: #d4af37;
-    }
+.menu-content a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
 
-    .search {
-      padding: 10px;
-      border-radius: 10px;
-      border: none;
-      outline: none;
-      background: #1a1a1a;
-      color: white;
-    }
+.menu-content a:hover{
+color:#d4af37;
+}
 
-    /* HERO */
+.search{
+padding:10px;
+border:none;
+border-radius:10px;
+background:#1a1a1a;
+color:white;
+}
 
-    header {
-      height: 100vh;
-      background:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
-      url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
+/* HEADER */
 
-      background-size: cover;
-      background-position: center;
+header{
+height:100vh;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
 
-      padding: 20px;
-    }
+background-size:cover;
+background-position:center;
 
-    h1 {
-      font-size: 5rem;
-      color: #d4af37;
-      letter-spacing: 6px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 20px rgba(212,175,55,0.5);
-    }
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 
-    .subtitle {
-      font-size: 1.5rem;
-      max-width: 800px;
-      line-height: 1.6;
-      color: #f0f0f0;
-      margin-bottom: 40px;
-    }
+padding:20px;
+}
 
-    .btn {
-      text-decoration: none;
-      background: #d4af37;
-      color: black;
-      padding: 15px 40px;
-      border-radius: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+h1{
+font-size:5rem;
+letter-spacing:6px;
+color:#d4af37;
+margin-bottom:20px;
+text-shadow:0 0 20px rgba(212,175,55,0.4);
+}
 
-    .btn:hover {
-      transform: scale(1.05);
-      background: white;
-    }
+.subtitle{
+font-size:1.4rem;
+max-width:850px;
+line-height:1.8;
+color:#f1f1f1;
+margin-bottom:40px;
+}
 
-    /* SECTION */
+.btn{
+text-decoration:none;
+background:#d4af37;
+color:black;
+padding:15px 40px;
+border-radius:40px;
+font-weight:bold;
+transition:0.3s;
+}
 
-    section {
-      padding: 90px 8%;
-    }
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
 
-    h2 {
-      text-align: center;
-      font-size: 3rem;
-      color: #d4af37;
-      margin-bottom: 20px;
-    }
+/* SECTION */
 
-    .intro {
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-      color: #cfcfcf;
-      line-height: 1.8;
-      margin-bottom: 50px;
-      font-size: 1.1rem;
-    }
+section{
+padding:90px 8%;
+}
 
-    /* GALERIE */
+h2{
+text-align:center;
+font-size:3rem;
+margin-bottom:25px;
+color:#d4af37;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
+.intro{
+text-align:center;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#cfcfcf;
+margin-bottom:50px;
+font-size:1.1rem;
+}
 
-    .gallery img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 25px;
-      border: 2px solid #d4af37;
-      transition: 0.4s;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    }
+/* GALERIE */
 
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
 
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: black;
-      color: #999;
-    }
+.gallery img{
+width:100%;
+height:500px;
+object-fit:cover;
+border-radius:25px;
+border:2px solid #d4af37;
+transition:0.4s;
+}
 
-    .instagram {
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.gallery img:hover{
+transform:scale(1.03);
+}
 
-    @media(max-width: 768px) {
+/* FOOTER */
 
-      h1 {
-        font-size: 3rem;
-      }
+footer{
+background:black;
+padding:40px;
+text-align:center;
+color:#999;
+}
 
-      .subtitle {
-        font-size: 1rem;
-      }
+.instagram{
+color:#d4af37;
+text-decoration:none;
+font-weight:bold;
+}
 
-      .gallery img {
-        height: 350px;
-      }
+/* MOBILE */
 
-    }
+@media(max-width:768px){
 
-  </style>
+h1{
+font-size:3rem;
+}
+
+.subtitle{
+font-size:1rem;
+}
+
+.gallery img{
+height:350px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- MENU -->
+<!-- MENU -->
 
-  <div class="menu">
+<div class="menu">
 
-    <details>
+<details>
 
-      <summary>☰</summary>
+<summary>☰</summary>
 
-      <div class="menu-content">
+<div class="menu-content">
 
-        <input class="search" type="text" placeholder="Rechercher un vêtement...">
+<input class="search" type="text" placeholder="Rechercher un vêtement...">
 
-        <a href="#magasin">🏬 Le magasin</a>
-        <a href="#collection">👕 Collection</a>
-        <a href="#contact">📱 Contact</a>
+<a href="#magasin">🏬 Le magasin</a>
+<a href="#collection">👕 Collection</a>
+<a href="#contact">📱 Contact</a>
 
-      </div>
+</div>
 
-    </details>
+</details>
 
-  </div>
+</div>
 
-  <!-- HERO -->
+<!-- HEADER -->
 
-  <header>
+<header>
 
-    <h1>POP‑REPUBLIC</h1>
+<h1>POP-REPUBLIC</h1>
 
-    <p class="subtitle">
-      Plus qu’un magasin, un univers streetwear.
-      <br><br>
-      Découvrez les dernières tendances mode,
-      sneakers et vêtements premium à
-      Saint‑Étienne‑de‑Saint‑Geoirs.
-      <br><br>
-      Élégance • Street • Luxe urbain ✨
-    </p>
+<p class="subtitle">
 
-    <a href="#magasin" class="btn">
-      Découvrir le magasin
-    </a>
+Plus qu’un magasin, un univers streetwear.
 
-  </header>
+<br><br>
 
-  <!-- SECTION -->
+Découvrez les dernières tendances mode,
+sneakers et vêtements premium à
+Saint-Étienne-de-Saint-Geoirs.
 
-  <section id="magasin">
+<br><br>
 
-    <h2>🔥 Notre univers</h2>
+Style • Élégance • Street Culture ✨
 
-    <p class="intro">
-      Pop‑Republic mélange mode urbaine,
-      pièces tendance et ambiance premium.
-      Un espace pensé pour les passionnés de style,
-      sneakers et street culture.
-    </p>
+</p>
 
-    <div class="gallery">
+<a href="#magasin" class="btn">
+Découvrir le magasin
+</a>
 
-      <!-- Remplace ces images par les vraies photos du magasin -->
+</header>
 
-      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop">
+<!-- SECTION -->
 
-      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+<section id="magasin">
 
-      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop">
+<h2>🔥 Le magasin Pop-Republic</h2>
 
-    </div>
+<p class="intro">
 
-  </section>
+Chez Pop-Republic, retrouvez les plus grandes tendances
+streetwear et casual premium dans une ambiance moderne,
+élégante et urbaine.
 
-  <footer id="contact">
+Un lieu pensé pour les passionnés de mode,
+de sneakers et de lifestyle.
 
-    <p>
-      Instagram :
-      <a class="instagram" href="https://instagram.com/poprepublic" target="_blank">
-        @poprepublic
-      </a>
-    </p>
+</p>
 
-  </footer>
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<p>
+📍 Pop-Republic — Saint-Étienne-de-Saint-Geoirs
+</p>
+
+<br>
+
+<p>
+
+Instagram :
+
+<a class="instagram"
+href="https://instagram.com/poprepublic"
+target="_blank">
+
+@poprepublic
+
+</a>
+
+</p>
+
+</footer>
 
 </body>
 </html>
-```
-
-# Ensuite 🚀
-
-1. Ouvre `index.html`
-2. Clique sur ✏️ Edit
-3. Supprime tout
-4. Colle ce nouveau code
-5. Clique sur `Commit changes`
-6. Recharge ton site GitHub Pages
-
-Tu auras maintenant un vrai site streetwear moderne avec :
-
-✅ menu hamburger ☰
-✅ grandes photos premium
-✅ design noir élégant
-✅ animations modernes
-✅ look type Supreme / Nike / Corteiz 🔥
