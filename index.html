@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>POP-REPUBLIC</title>
+<title>POP REPUBLIC</title>
 
 <style>
 
@@ -16,7 +17,7 @@ box-sizing:border-box;
 
 body{
 font-family:Arial,sans-serif;
-background:black;
+background:#050505;
 color:white;
 overflow-x:hidden;
 }
@@ -31,18 +32,18 @@ z-index:1000;
 }
 
 .menu details{
-background:rgba(0,0,0,0.8);
-padding:12px 18px;
+background:rgba(0,0,0,0.85);
+border:1px solid #d4af37;
 border-radius:15px;
-border:1px solid gold;
-width:220px;
+padding:12px 18px;
+width:230px;
 }
 
 .menu summary{
 list-style:none;
 cursor:pointer;
 font-size:2rem;
-color:gold;
+color:#d4af37;
 }
 
 .menu summary::-webkit-details-marker{
@@ -59,6 +60,11 @@ gap:15px;
 .menu-content a{
 text-decoration:none;
 color:white;
+transition:0.3s;
+}
+
+.menu-content a:hover{
+color:#d4af37;
 }
 
 .search{
@@ -72,10 +78,11 @@ color:white;
 /* HEADER */
 
 header{
+
 height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
 url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
 
 background-size:cover;
@@ -92,24 +99,26 @@ padding:20px;
 
 h1{
 font-size:5rem;
-color:gold;
+color:#d4af37;
+letter-spacing:6px;
 margin-bottom:20px;
-letter-spacing:5px;
 }
 
 .subtitle{
-font-size:1.3rem;
-max-width:800px;
+font-size:1.4rem;
+max-width:850px;
 line-height:1.8;
 margin-bottom:40px;
 }
 
+/* BOUTON */
+
 .btn{
-background:gold;
-color:black;
-padding:15px 35px;
-border-radius:40px;
 text-decoration:none;
+background:#d4af37;
+color:black;
+padding:15px 40px;
+border-radius:40px;
 font-weight:bold;
 transition:0.3s;
 }
@@ -128,8 +137,8 @@ padding:90px 8%;
 h2{
 text-align:center;
 font-size:3rem;
-color:gold;
-margin-bottom:20px;
+margin-bottom:25px;
+color:#d4af37;
 }
 
 .intro{
@@ -153,8 +162,8 @@ gap:25px;
 width:100%;
 height:500px;
 object-fit:cover;
-border-radius:20px;
-border:2px solid gold;
+border-radius:25px;
+border:2px solid #d4af37;
 transition:0.4s;
 }
 
@@ -165,14 +174,14 @@ transform:scale(1.03);
 /* FOOTER */
 
 footer{
-background:#050505;
+background:black;
 padding:40px;
 text-align:center;
 color:#999;
 }
 
 .instagram{
-color:gold;
+color:#d4af37;
 text-decoration:none;
 font-weight:bold;
 }
@@ -196,6 +205,7 @@ height:350px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -226,21 +236,29 @@ height:350px;
 
 <header>
 
-<h1>POP-REPUBLIC</h1>
+<h1>POP REPUBLIC</h1>
 
 <p class="subtitle">
 
-Le streetwear premium à
+Plus qu’un magasin.
+Un univers streetwear premium.
+
+<br><br>
+
+Découvrez les dernières tendances mode,
+sneakers et vêtements à
 Saint-Étienne-de-Saint-Geoirs.
 
 <br><br>
 
-Sneakers • Mode • Style urbain ✨
+Élégance • Street • Lifestyle ✨
 
 </p>
 
 <a href="#magasin" class="btn">
-Découvrir
+
+Découvrir le magasin
+
 </a>
 
 </header>
@@ -249,13 +267,13 @@ Découvrir
 
 <section id="magasin">
 
-<h2>🔥 POP-REPUBLIC</h2>
+<h2>🔥 Le magasin</h2>
 
 <p class="intro">
 
-Découvrez l’univers Pop-Republic :
-une boutique streetwear moderne,
-des sneakers tendance et une ambiance premium.
+Bienvenue chez Pop Republic,
+une boutique moderne mêlant streetwear,
+mode premium et sneakers tendance.
 
 </p>
 
@@ -274,6 +292,13 @@ des sneakers tendance et une ambiance premium.
 <footer id="contact">
 
 <p>
+📍 Pop Republic — Saint-Étienne-de-Saint-Geoirs
+</p>
+
+<br>
+
+<p>
+
 Instagram :
 <a class="instagram"
 href="https://instagram.com/poprepublic"
@@ -282,6 +307,7 @@ target="_blank">
 @poprepublic
 
 </a>
+
 </p>
 
 </footer>
