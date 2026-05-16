@@ -1,283 +1,276 @@
+# Pop‑Republic — Version Luxe Noir & Or ✨🔥
+
+Remplace entièrement le contenu de ton fichier `index.html` par ce code 👇
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop‑Republic</title>
 
-<title>POP REPUBLIC</title>
+  <style>
 
-<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-<script src="script.js"></script>
-body{
-font-family:Arial,sans-serif;
-background:#050505;
-color:white;
-overflow-x:hidden;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: white;
+      overflow-x: hidden;
+    }
 
-/* MENU */
+    /* MENU */
 
-.menu{
-position:fixed;
-top:20px;
-left:20px;
-z-index:1000;
-}
+    .menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
 
-.menu details{
-background:rgba(0,0,0,0.85);
-border:1px solid #d4af37;
-border-radius:15px;
-padding:12px 18px;
-width:230px;
-}
+    .menu details {
+      background: rgba(0,0,0,0.8);
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 10px 15px;
+      width: 220px;
+      backdrop-filter: blur(10px);
+    }
 
-.menu summary{
-list-style:none;
-cursor:pointer;
-font-size:2rem;
-color:#d4af37;
-}
+    .menu summary {
+      list-style: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: white;
+    }
 
-.menu summary::-webkit-details-marker{
-display:none;
-}
+    .menu summary::-webkit-details-marker {
+      display: none;
+    }
 
-.menu-content{
-margin-top:15px;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
+    .menu-content {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-.menu-content a{
-text-decoration:none;
-color:white;
-transition:0.3s;
-}
+    .menu-content a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
 
-.menu-content a:hover{
-color:#d4af37;
-}
+    .menu-content a:hover {
+      color: white;
+    }
 
-.search{
-padding:10px;
-border:none;
-border-radius:10px;
-background:#1a1a1a;
-color:white;
-}
+    .search {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: #1a1a1a;
+      color: white;
+    }
 
-/* HEADER */
+    /* HERO */
 
-header{
+    header {
+      height: 100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+      url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
 
-height:100vh;
+      background-size: cover;
+      background-position: center;
 
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
-url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop');
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 
-background-size:cover;
-background-position:center;
+      padding: 20px;
+    }
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
+    h1 {
+      font-size: 5rem;
+      color: white;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(212,175,55,0.5);
+    }
 
-padding:20px;
-}
+    .subtitle {
+      font-size: 1.5rem;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin-bottom: 40px;
+    }
 
-h1{
-font-size:5rem;
-color:#d4af37;
-letter-spacing:6px;
-margin-bottom:20px;
-}
+    .btn {
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 15px 40px;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.subtitle{
-font-size:1.4rem;
-max-width:850px;
-line-height:1.8;
-margin-bottom:40px;
-}
+    .btn:hover {
+      transform: scale(1.05);
+      background: white;
+    }
 
-/* BOUTON */
+    /* SECTION */
 
-.btn{
-text-decoration:none;
-background:#d4af37;
-color:black;
-padding:15px 40px;
-border-radius:40px;
-font-weight:bold;
-transition:0.3s;
-}
+    section {
+      padding: 90px 8%;
+    }
 
-.btn:hover{
-background:white;
-transform:scale(1.05);
-}
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 20px;
+    }
 
-/* SECTION */
+    .intro {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      color: #cfcfcf;
+      line-height: 1.8;
+      margin-bottom: 50px;
+      font-size: 1.1rem;
+    }
 
-section{
-padding:90px 8%;
-}
+    /* GALERIE */
 
-h2{
-text-align:center;
-font-size:3rem;
-margin-bottom:25px;
-color:#d4af37;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
 
-.intro{
-text-align:center;
-max-width:900px;
-margin:auto;
-line-height:1.8;
-margin-bottom:50px;
-color:#d0d0d0;
-}
+    .gallery img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 2px solid white;
+      transition: 0.4s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
 
-/* GALERIE */
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: black;
+      color: #999;
+    }
 
-.gallery img{
-width:100%;
-height:500px;
-object-fit:cover;
-border-radius:25px;
-border:2px solid #d4af37;
-transition:0.4s;
-}
+    .instagram {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.gallery img:hover{
-transform:scale(1.03);
-}
+    @media(max-width: 768px) {
 
-/* FOOTER */
+      h1 {
+        font-size: 3rem;
+      }
 
-footer{
-background:black;
-padding:40px;
-text-align:center;
-color:#999;
-}
+      .subtitle {
+        font-size: 1rem;
+      }
 
-.instagram{
-color:#d4af37;
-text-decoration:none;
-font-weight:bold;
-}
+      .gallery img {
+        height: 350px;
+      }
 
-/* MOBILE */
+    }
 
-@media(max-width:768px){
-
-h1{
-font-size:3rem;
-}
-
-.subtitle{
-font-size:1rem;
-}
-
-.gallery img{
-height:350px;
-}
-
-}
-
-</style>
-
+  </style>
 </head>
 
 <body>
 
-<!-- MENU -->
+  <!-- MENU -->
 
-<div class="menu">
+  <div class="menu">
 
-<details>
+    <details>
 
-<summary>☰</summary>
+      <summary>☰</summary>
 
-<div class="menu-content">
+      <div class="menu-content">
 
-<input class="search" type="text" placeholder="Rechercher un vêtement...">
+        <input class="search" type="text" placeholder="Rechercher un vêtement...">
 
-<a href="#magasin">🏬 Le magasin</a>
-<a href="#collection">👕 Collection</a>
-<a href="#contact">📱 Contact</a>
+        <a href="#magasin">🏬 Le magasin</a>
+        <a href="#collection">👕 Collection</a>
+        <a href="#contact">📱 Contact</a>
 
-</div>
+      </div>
 
-</details>
+    </details>
 
-</div>
+  </div>
 
-<!-- HEADER -->
+  <!-- HERO -->
 
-<header>
+  <header>
 
-<h1>POP REPUBLIC</h1>
+    <h1>POP‑REPUBLIC</h1>
 
-<p class="subtitle">
+    <p class="subtitle">
+      Plus qu’un magasin, un univers streetwear.
+      <br><br>
+      Découvrez les dernières tendances mode,
+      sneakers et vêtements premium à
+      Saint‑Étienne‑de‑Saint‑Geoirs.
+      <br><br>
+      Élégance • Street • Luxe urbain ✨
+    </p>
 
-Plus qu’un magasin.
-Un univers streetwear premium.
+    <a href="#magasin" class="btn">
+      Découvrir le magasin
+    </a>
 
-<br><br>
+  </header>
 
-Découvrez les dernières tendances mode,
-sneakers et vêtements à
-Saint-Étienne-de-Saint-Geoirs.
+  <!-- SECTION -->
 
-<br><br>
+  <section id="magasin">
 
-Élégance • Street • Lifestyle ✨
+    <h2>🔥 Notre univers</h2>
 
-</p>
+    <p class="intro">
+      Pop‑Republic mélange mode urbaine,
+      pièces tendance et ambiance premium.
+      Un espace pensé pour les passionnés de style,
+      sneakers et street culture.
+    </p>
 
-<a href="#magasin" class="btn">
+    <div class="gallery">
 
-Découvrir le magasin
-
-</a>
-
-</header>
-
-<!-- SECTION -->
-
-<section id="magasin">
-
-<h2>🔥 Le magasin</h2>
-
-<p class="intro">
-
-Bienvenue chez Pop Republic,
-une boutique moderne mêlant streetwear,
-mode premium et sneakers tendance.
-
-</p>
-
-<div class="gallery">
+<!-- Photos style vrai magasin Pop Republic -->
 
 <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop">
 
@@ -287,30 +280,111 @@ mode premium et sneakers tendance.
 
 </div>
 
-</section>
+  </section>
 
-<footer id="contact">
+  <footer id="contact">
 
-<p>
-📍 Pop Republic — Saint-Étienne-de-Saint-Geoirs
-</p>
+    <p>
+      Instagram :
+      <a class="instagram" href="https://instagram.com/poprepublic" target="_blank">
+        @poprepublic
+      </a>
+    </p>
 
-<br>
-
-<p>
-
-Instagram :
-<a class="instagram"
-href="https://instagram.com/poprepublic"
-target="_blank">
-
-@poprepublic
-
-</a>
-
-</p>
-
-</footer>
+  </footer>
 
 </body>
 </html>
+```
+
+# Ajouter du JavaScript ⚡
+
+Crée maintenant un nouveau fichier appelé :
+
+```text
+script.js
+```
+
+Puis colle ce code dedans 👇
+
+```javascript
+// MENU
+
+const searchInput = document.querySelector('.search');
+
+searchInput.addEventListener('keyup', function() {
+
+  const value = searchInput.value.toLowerCase();
+
+  console.log('Recherche : ' + value);
+
+});
+
+// ANIMATION IMAGES
+
+const images = document.querySelectorAll('.gallery img');
+
+window.addEventListener('scroll', () => {
+
+  images.forEach(img => {
+
+    const position = img.getBoundingClientRect().top;
+
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+
+      img.style.opacity = '1';
+      img.style.transform = 'translateY(0px)';
+
+    }
+
+  });
+
+});
+
+// STYLE INITIAL
+
+images.forEach(img => {
+
+  img.style.opacity = '0';
+  img.style.transform = 'translateY(50px)';
+  img.style.transition = '0.8s';
+
+});
+
+// MESSAGE
+
+window.onload = () => {
+
+  console.log('Bienvenue sur POP-REPUBLIC 🔥');
+
+};
+```
+
+# Connecter le JS au site 📌
+
+Juste avant `</body>` dans ton HTML ajoute :
+
+```html
+<script src="script.js"></script>
+```
+
+Comme ça ton JavaScript sera relié au site ✨
+
+# Ensuite 🚀
+
+1. Ouvre `index.html`
+2. Clique sur ✏️ Edit
+3. Supprime tout
+4. Colle ce nouveau code
+5. Clique sur `Commit changes`
+6. Recharge ton site GitHub Pages
+
+Tu auras maintenant un vrai site streetwear moderne avec :
+
+✅ menu hamburger ☰
+✅ grandes photos premium
+✅ design noir élégant
+✅ animations modernes
+✅ look type Supreme / Nike / Corteiz 🔥
